@@ -1,0 +1,4 @@
+{{ define "main" }}
+{{ .Scratch.Set "pages" (.Paginate .Site.RegularPages 5).Pages }}
+{{ partial "list.html" . }}
+{{ end }}

@@ -1,0 +1,7 @@
+<article class="article">
+  <div class="date">
+      <time>{{ with site.Params.DateForm }}{{ .Date.Format . }}{{ else }}{{ .Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
+  </div>
+  <h1 class="article-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  <div class="summary">{{ .Summary }}...</div>
+</article>

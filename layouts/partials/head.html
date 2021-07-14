@@ -1,12 +1,12 @@
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ if .IsHome }}
   <title>{{ .Site.Title }}</title>
   {{ else }}
   <title>{{ .Title }} | {{ .Site.Title }}</title>
   {{ end }}
   <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-  <link rel="stylesheet" href="/css/app.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/app.css" />
   {{ partial "custom-head" . }}
 </head>

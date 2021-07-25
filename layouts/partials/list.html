@@ -1,4 +1,5 @@
 <div class="container">
+  <div class="left"></div>
   <div class="main">
     <div>
       {{ $pages := .Scratch.Get "pages" }}
@@ -8,4 +9,5 @@
       {{ template "_internal/pagination.html" . }}
     </div>
   </div>
+  <div class="right"></div>
 </div>

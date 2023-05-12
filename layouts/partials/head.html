@@ -3,10 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ if .IsHome }}
   <title>{{ .Site.Title }}</title>
-  <meta name="descriptoin" content="{{ .Description }}" />
+  <meta name="description" content="{{ .Description }}" />
   {{ else }}
   <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta name="descriptoin" content="{{ .Summary }}" />
+  <meta name="description" content="{{ .Summary }}" />
   {{ end }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/theme.css" />
   {{ partial "custom-head" . }}
